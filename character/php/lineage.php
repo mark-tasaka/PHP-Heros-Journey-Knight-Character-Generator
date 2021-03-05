@@ -64,22 +64,26 @@ function lineageReduction($lineage)
 
 function levelLimit($lineage, $level)
 {
-    if($lineage == "3" && $level > 5)
+    
+    if($lineage == "1" || $lineage == "3")
     {
-        $level = 5;
-    }
-
-    if($lineage == "2" && $level > 6)
-    {
-        $level = 6;
-    }
-
-    if($lineage == "1" || $lineage == "4" || $lineage == "5")
-    {
-        if($level > 7)
+        if($level > 4)
         {
-            $level = 7;
+            $level = 4;
         }
+    }
+    
+    if($lineage == "2" || $lineage == "5")
+    {
+        if($level > 3)
+        {
+            $level = 3;
+        }
+    }
+
+    if($lineage == "4" && $level > 7)
+    {
+        $level = 7;
     }
 
     return $level;
@@ -88,15 +92,15 @@ function levelLimit($lineage, $level)
 
 function levelLimitMessage($lineage)
 {
-    if($lineage == "2")
+    if($lineage == "1" || $lineage == "3")
     {
-        $message = "<span class='lineageBold'>Lineage Level Limit: 6</span>";
+        $message = "<span class='lineageBold'>Lineage Level Limit: 4</span>";
     }
-    else if($lineage == "3")
+    else if($lineage == "2" || $lineage == "5")
     {
-        $message = "<span class='lineageBold'>Lineage Level Limit: 5</span>";
+        $message = "<span class='lineageBold'>Lineage Level Limit: 3</span>";
     }
-    else if($lineage == "1" || $lineage == "4" || $lineage == "5")
+    else if($lineage == "4")
     {
         $message = "<span class='lineageBold'>Lineage Level Limit: 7</span>";
     }
