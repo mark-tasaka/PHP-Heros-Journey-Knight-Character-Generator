@@ -4,6 +4,13 @@ The Knight Character Generator generates a random Hero’s Journey character usi
 ----------------
 
 
+
+Update 1.01: 2021-03-05
+
+Updates to lineage.php and xp.php.
+
+
+
 Initial commit: 2021-03-04
 
-The initial commit for the Warrior Character Generator.
+The initial commit for the Knight Character Generator.
