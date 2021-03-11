@@ -5,6 +5,20 @@ The Knight Character Generator generates a random Hero’s Journey character usi
 
 
 
+A live version of the Knight Character Generator is available at:
+
+https://www.oldschooladventures.org/hero/more/classes/knight/
+
+
+-------------------
+
+
+Update 1.02: 2021-03-11
+
+A launch page for Knight Character Generator has been added.
+
+
+
 Update 1.01: 2021-03-05
 
 Updates to lineage.php and xp.php.
